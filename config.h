@@ -58,7 +58,7 @@ static Sp scratchpads[] = {
 	{"keepassxc",   spcmd3},
 };
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 static const char *tagsalt[] = { "", "", "", "", "", "", "", "", "" };
 static const int momentaryalttags = 1; /* 1 means alttags will show only when key is held down*/
 static const Rule rules[] = {
