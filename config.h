@@ -21,13 +21,13 @@ static const char col_cyan[]        = "#005577";
 static const unsigned int alpha_norm = 0x30;
 static const unsigned int alpha_sel = 0x20;
 static const unsigned int baralpha = 0x20;
-static const unsigned int borderalpha = OPAQUE;
-static const char col_focus_border[]        = "#44B4FF";
+static const unsigned int borderalpha = 0xee;
+static const char col_border[]        = "#44B4FF";
 //static const char col_focus_border[]        = "#FF696F";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_focus_border},
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray1 },
+	[SchemeSel]  = { col_gray4, col_cyan,   col_border},
 	[SchemeStatus]  = { col_gray3, col_gray1,  "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
 	[SchemeTagsSel]  = { col_gray4, "#000000",  "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
     [SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
@@ -36,7 +36,7 @@ static const char *colors[][3]      = {
 };
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
-	[SchemeNorm] = { OPAQUE, alpha_norm, borderalpha },
+	[SchemeNorm] = { OPAQUE, alpha_norm, 0x20  },
 	[SchemeSel]  = { OPAQUE, alpha_sel, OPAQUE },
 	[SchemeTagsNorm]  = { OPAQUE, alpha_norm, OPAQUE },
 	[SchemeTagsSel]  = { OPAQUE, alpha_sel, OPAQUE },
